@@ -22,4 +22,6 @@ func main() {
 	fmt.Println(RoundPlus(123.554999, 3))
 	fmt.Println(RoundPlus(123.555555, 3))
 	fmt.Println(RoundPlus(123.558, 2))
+
+	fmt.Println("Power: " ,  math.Pow(2, 4))
 }
