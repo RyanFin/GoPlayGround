@@ -21,13 +21,13 @@ func staircase(n int32) {
       //   fmt.Println(j)
       // }
     // Add 'i' spaces to the repeat string
-    // var spacer = strings.Repeat(" ", i)
-    // var hashes = strings.Repeat("#", i)
-    fmt.Println(strings.Repeat("#", i))
+    var spacer = strings.Repeat(" ", i)
+    var hashes = strings.Repeat("#", i)
+    // fmt.Println(strings.Repeat("#", i))
 
     // join together
-    // s := []string{spacer, hashes}
-    // fmt.Println(strings.Join(s, ""))
+    s := []string{spacer, hashes}
+    fmt.Println(strings.Join(s, ""))
 
     }
   }
