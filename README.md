@@ -11,3 +11,6 @@
 #### Roundup.go
 - https://gist.github.com/DavidVaini/10308388
 - https://play.golang.org/p/Xog_9wXSqj
+
+### Staircase
+- https://rishabh1403.com/posts/coding/hackerrank/2018/09/hackerrank-solution-of-staircase-in-golang/

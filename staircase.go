@@ -17,17 +17,19 @@ func staircase(n int32) {
   if(k > 0){
     for i := 1; i < k+1; i++{
 
+      var spacer string
+
       for j := k+1; j > i; j--{
-        fmt.Println(j)
+        spacer = strings.Repeat(" ", j)
+        var hashes = strings.Repeat("#", i)
+        // fmt.Println(strings.Repeat("#", i))
+
+        // join together
+        s := []string{spacer, hashes}
+        fmt.Println(strings.Join(s, ""))
       }
     // Add 'i' spaces to the repeat string
-    var spacer = strings.Repeat(" ", i)
-    var hashes = strings.Repeat("#", i)
-    // fmt.Println(strings.Repeat("#", i))
 
-    // join together
-    s := []string{spacer, hashes}
-    fmt.Println(strings.Join(s, ""))
 
     }
   }
