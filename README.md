@@ -1,5 +1,7 @@
 # GoPlayGround
 
+## Data Structures and Algorithms [Robert Lafore]
+  - Supporting Workshop Applets: https://cs.brynmawr.edu/Courses/cs206/spring2004/lafore.html
 
 ## Problem Solving
 
