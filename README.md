@@ -1,9 +1,10 @@
 # GoPlayGround
 
 ## Data Structures and Algorithms [Robert Lafore]
-  - Supporting Workshop Applets: 
+  - Supporting Workshop Applets:
     - https://cs.brynmawr.edu/Courses/cs206/spring2004/lafore.html
     - https://cs.ccsu.edu/~markov/ccsu_courses/501Syllabus.html
+      - Run the Java applet with the following command: $ appletviewer <html file>
 
 ## Problem Solving
 
