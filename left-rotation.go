@@ -22,16 +22,18 @@ func rotateLeft(d int32, arr []int32) []int32 {
 
     // Write your code here
     // while loop implementation in go with the use of for-loop
+    // only perform this action 4 times. Use Go's version of while-loop
     for d > 0{
         fmt.Println("d: " , d)
-
+        // store first index value in temp
         temp := arr[0]
+        // shift other values one to the left [in temp][move left][move left][move left][move left]
         for i := 1; i <= len(arr)-1; i++{
             arr[i-1] = arr[i]
         }
-
+        // add first index value to the back of array
         arr[len(arr)-1] = temp
-
+        // decrement d-counter 
         d --
 
     }
