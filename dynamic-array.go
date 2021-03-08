@@ -25,8 +25,9 @@ func dynamicArray(n int32, queries [][]int32) []int32 {
     var arrZero []int32
     var arrOne []int32
     var lastAnswer int32
+    var ret []int32
     lastAnswer = 0
-    fmt.Println(arrOne)
+    // fmt.Println(arrOne)
     // fmt.Println(queries)
     // time complexity runtimes: O(q * e)
     for _ , e := range queries{
@@ -52,31 +53,39 @@ func dynamicArray(n int32, queries [][]int32) []int32 {
             x := e[1]
             // index 0 specified by y
             if (e[2] == 0){
+                fmt.Println("x " , x)
+                fmt.Println("lastans: " , lastAnswer)
+                fmt.Println("xorTest: " , XorCalculation(x, lastAnswer, n))
             if(XorCalculation(x, lastAnswer, n) == 0){
             // y value is the index
             lastAnswer = arrZero[0]
             fmt.Println(lastAnswer)
+            ret = append(ret, lastAnswer)
             }
 
             if(XorCalculation(x, lastAnswer, n) == 1){
                 lastAnswer = arrOne[0]
                 fmt.Println(lastAnswer)
+                ret = append(ret, lastAnswer)
             }
 
             }
 
             // index 1 specified by y
             if (e[2] == 1){
-
+                fmt.Println("x2: " , x)
+                fmt.Println("lastans2: " , lastAnswer)
+                fmt.Println("xorTest 2: " , XorCalculation(x, lastAnswer, n))
                 if(XorCalculation(x, lastAnswer, n) == 0){
             // y value is the index
             lastAnswer = arrZero[1]
             fmt.Println(lastAnswer)
+            ret = append(ret, lastAnswer)
             }
-        fmt.Println("lasl: " , lastAnswer)
             if(XorCalculation(x, lastAnswer, n) == 1){
                 lastAnswer = arrOne[1]
                 fmt.Println(lastAnswer)
+                ret = append(ret, lastAnswer)
             }
 
             }
@@ -84,6 +93,9 @@ func dynamicArray(n int32, queries [][]int32) []int32 {
         }
 
     }
+
+    fmt.Println(arrZero)
+    fmt.Println(arrOne)
 
     return arrZero
 }
