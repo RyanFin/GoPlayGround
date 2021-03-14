@@ -19,3 +19,6 @@
 
 ### Staircase
 - https://rishabh1403.com/posts/coding/hackerrank/2018/09/hackerrank-solution-of-staircase-in-golang/
+
+### Left-rotation
+- https://www.hackerrank.com/challenges/array-left-rotation/forum
