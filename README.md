@@ -1,5 +1,11 @@
 # GoPlayGround
 
+## iota
+- https://yourbasic.org/golang/iota/
+
+## Variadic Functions
+- https://gobyexample.com/variadic-functions
+
 ## Data Structures and Algorithms [Robert Lafore]
   - Supporting Workshop Applets:
     - https://cs.brynmawr.edu/Courses/cs206/spring2004/lafore.html
@@ -22,3 +28,4 @@
 
 ### Left-rotation
 - https://www.hackerrank.com/challenges/array-left-rotation/forum
+
