@@ -6,6 +6,9 @@
 ## Variadic Functions
 - https://gobyexample.com/variadic-functions
 
+## Go Channels
+- https://tutorialedge.net/golang/go-channels-tutorial/
+
 ## Data Structures and Algorithms [Robert Lafore]
   - Supporting Workshop Applets:
     - https://cs.brynmawr.edu/Courses/cs206/spring2004/lafore.html
