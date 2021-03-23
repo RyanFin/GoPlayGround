@@ -19,23 +19,26 @@ func MyStringGoFunc(c chan string) {
 
 func SendRandomInt(channel chan int) {
 	fmt.Println("Generating random integer value...")
+	time.Sleep(100 * time.Millisecond) // use time.Sleep for buffered channel
 	channel <- rand.Intn(10)
+	fmt.Println("run more than once in buffered channel...")
 }
 
 // create a channel to communicate and send data between two goroutines
 func main() {
 
-	value := make(chan int, 3) // make channel
+	// value := make(chan int) // make unbuffered channel
+	value := make(chan int, 2) // make buffered channel
 	defer close(value)         // close channel
 
 	// call go routine
-	go SendRandomInt(value)
 	go SendRandomInt(value)
 	go SendRandomInt(value)
 
 	v := <-value
 
 	fmt.Println(v)
+	time.Sleep(1000 * time.Millisecond)
 
 }
 
