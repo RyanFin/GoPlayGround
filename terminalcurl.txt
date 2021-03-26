@@ -1,0 +1,2 @@
+-H 'Accept:' has not accept header
+$ curl XPOST localhost:8080/readings/store -H 'Accept:' -d '{"smartMeterId":"smart-meter-5","electricityReadings":[{"time":"2021-03-24T13:34:50.74725Z","reading":0.0923}]}' --header 'Content-Type: application/json'
