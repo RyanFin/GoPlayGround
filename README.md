@@ -1,5 +1,10 @@
 # GoPlayGround
 
+## Go General
+- Naming Conventions for Golang Functions: https://www.golangprograms.com/naming-conventions-for-golang-functions.html
+
+
+
 ## iota
 - https://yourbasic.org/golang/iota/
 
