@@ -3,7 +3,12 @@
 ## Go General
 - Naming Conventions for Golang Functions: https://www.golangprograms.com/naming-conventions-for-golang-functions.html
 
-
+## Linked Lists
+- Go Official Linked List Doc: https://golang.org/pkg/container/list/
+- Linked List Tutorial Junmin Lee
+  - Part 1: https://www.youtube.com/watch?v=1S0_-VxPLJo&list=PL0q7mDmXPZm7s7weikYLpNZBKk5dCoWm6&index=3&ab_channel=JunminLee
+  - Part 2: https://www.youtube.com/watch?v=8QoynPUY9_8&list=PL0q7mDmXPZm7s7weikYLpNZBKk5dCoWm6&index=4&ab_channel=JunminLee
+  - LinkedList Deletion at a particular position: https://www.youtube.com/watch?v=f1r_jxCyOl0&ab_channel=NesoAcademy
 
 ## iota
 - https://yourbasic.org/golang/iota/

@@ -1,3 +1,4 @@
+// Hackerrank solution to insert some data at a specific point in a linkedlist
 package main
 
 import (
