@@ -9,6 +9,7 @@
   - Part 1: https://www.youtube.com/watch?v=1S0_-VxPLJo&list=PL0q7mDmXPZm7s7weikYLpNZBKk5dCoWm6&index=3&ab_channel=JunminLee
   - Part 2: https://www.youtube.com/watch?v=8QoynPUY9_8&list=PL0q7mDmXPZm7s7weikYLpNZBKk5dCoWm6&index=4&ab_channel=JunminLee
   - LinkedList Deletion at a particular position: https://www.youtube.com/watch?v=f1r_jxCyOl0&ab_channel=NesoAcademy
+  - Reversing a linked list: https://medium.com/outco/reversing-a-linked-list-easy-as-1-2-3-560fbffe2088
 
 ## iota
 - https://yourbasic.org/golang/iota/

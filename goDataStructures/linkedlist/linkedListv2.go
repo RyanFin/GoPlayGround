@@ -38,6 +38,11 @@ func (l LinkedListv2) printAllData() {
 	fmt.Println(" ")
 }
 
+func (n *Nodev2) insertNodeAtHead(l LinkedListv2, dat int) {
+	node := &Nodev2{data: dat}
+	node.next = l.head
+}
+
 func (l *LinkedListv2) removeElemWithPos(pos int) *LinkedListv2 {
 	curr := l.head
 	prev := l.head
@@ -63,6 +68,27 @@ func (l *LinkedListv2) removeElemWithPos(pos int) *LinkedListv2 {
 
 }
 
+func reverse(head *Nodev2) *Nodev2 {
+	// set previous to equal nil
+	var previous *Nodev2
+	current := head
+	following := head
+
+	// while curr is not equal to nil (end) iterate to the end of the list
+	for current != nil {
+		// following is equal to the next node
+		following = following.next
+		// current points to previous node to redirect node link
+		current.next = previous
+		// previous is set to current
+		previous = current
+		// set current to the next node
+		current = following
+	}
+
+	return previous
+}
+
 func main() {
 	myList := LinkedListv2{}
 
@@ -72,6 +98,7 @@ func main() {
 	n4 := &Nodev2{data: 156}
 	n5 := &Nodev2{data: 71}
 	n6 := &Nodev2{data: 12}
+	nf := &Nodev2{}
 
 	myList.prepend(n1)
 	myList.prepend(n2)
@@ -79,6 +106,7 @@ func main() {
 	myList.prepend(n4)
 	myList.prepend(n5)
 	myList.prepend(n6)
+	nf.insertNodeAtHead(myList, 202)
 
 	// fmt.Println(myList.first())
 
