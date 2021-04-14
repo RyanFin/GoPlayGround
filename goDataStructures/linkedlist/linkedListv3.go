@@ -40,6 +40,21 @@ func (l LinkedListv3) printAllElems() (bool, error) {
 	return true, nil
 }
 
+// func getNode(head *LinkedListv3, positionFromTail int32) int32 {
+// 	first := head
+// 	second := head
+// 	count := 0
+
+// 	for first.next != nil {
+// 		first = first.next
+// 		count++
+// 		if count > int(positionFromTail) {
+// 			second = second.next
+// 		}
+// 	}
+// 	return second.data
+// }
+
 // reverse function
 func (l *LinkedListv3) reverse() *Nodev3 {
 	var previous *Nodev3
