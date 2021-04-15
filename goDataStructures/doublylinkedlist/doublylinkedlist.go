@@ -98,6 +98,29 @@ func sortedInsert(head *DoublyLinkedListNode, data int32) *DoublyLinkedListNode 
 
 }
 
+func reverse(head *DoublyLinkedListNode) *DoublyLinkedListNode {
+	var temp *DoublyLinkedListNode
+	curr := head
+
+	/* swap next and prev for all nodes of
+	   doubly linked list */
+	for curr != nil {
+		temp = curr.prev
+		curr.prev = curr.next
+		curr.next = temp
+		curr = curr.prev
+	}
+
+	/* Before changing head, check for the cases like
+	   empty list and list with only one node */
+	if temp != nil {
+		head = temp.prev
+	}
+
+	return head
+
+}
+
 func main() {
 	reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
 
