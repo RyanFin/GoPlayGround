@@ -1,5 +1,12 @@
 # GoPlayGround
 
+## Interview Practice
+  - 4 TIPS FOR PREPARING FOR A CODING INTERVIEW: https://generalassemb.ly/blog/4-tips-for-preparing-for-a-coding-interview/
+    - [Hackerrank](https://www.hackerrank.com/)
+    - [LeetCode](https://leetcode.com/)
+    - [Codewars](https://www.codewars.com/)
+    - [AlgoExpert](https://www.algoexpert.io/)
+
 ## Go General
 - Naming Conventions for Golang Functions: https://www.golangprograms.com/naming-conventions-for-golang-functions.html
 - Anonymous functions: https://www.geeksforgeeks.org/anonymous-function-in-go-language/
@@ -44,4 +51,5 @@
 
 ### Left-rotation
 - https://www.hackerrank.com/challenges/array-left-rotation/forum
+
 
