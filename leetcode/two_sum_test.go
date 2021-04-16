@@ -49,6 +49,20 @@ func TestTwoSumsFunctionv3(t *testing.T) {
 	}
 }
 
+func TestTwoSumsFunctionv4(t *testing.T) {
+	arr := []int{3, 3}
+	target := 6
+
+	// I expect to get this result
+	expected := []int{0, 1} // [1,2]
+
+	for i, e := range twoSum(arr, target) {
+		if e != expected[i] {
+			t.Errorf("got %v, want %v", e, expected[i])
+		}
+	}
+}
+
 func TestNoSummableInts(t *testing.T) {
 	arr := []int{3, 6, 9, 12}
 	target := 1

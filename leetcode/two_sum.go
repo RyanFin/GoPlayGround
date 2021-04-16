@@ -15,7 +15,7 @@ func twoSum(nums []int, target int) []int {
 		for j := 0; j < len(nums); j++ {
 			// fmt.Println("i: ", nums[i], "j: ", nums[j])
 			// Additional special case -> the same number cannot be used
-			if (nums[i]+nums[j]) == target && (nums[i] != nums[j]) {
+			if (nums[i]+nums[j]) == target && (i != j) {
 				ret = append(ret, i)
 				ret = append(ret, j)
 				return ret
