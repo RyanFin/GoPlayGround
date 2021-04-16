@@ -2,6 +2,7 @@
 
 ## Go General
 - Naming Conventions for Golang Functions: https://www.golangprograms.com/naming-conventions-for-golang-functions.html
+- Anonymous functions: https://www.geeksforgeeks.org/anonymous-function-in-go-language/
 
 ## Linked Lists
 - Go Official Linked List Doc: https://golang.org/pkg/container/list/
