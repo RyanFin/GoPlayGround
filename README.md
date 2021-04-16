@@ -12,6 +12,10 @@
 - Anonymous functions: https://www.geeksforgeeks.org/anonymous-function-in-go-language/
 - Array increment types, arr[i]++ vs arr[i++]: https://stackoverflow.com/questions/7595247/array-increment-types-in-c-arrayi-vs-arrayi
 
+## Coverage
+- Generate coverage report: $ go test -coverprofile=coverage.out
+- View coverage report in web browser: $ go tool cover -html=coverage.out 
+
 ## Linked Lists
 - Go Official Linked List Doc: https://golang.org/pkg/container/list/
 - Linked List Tutorial Junmin Lee
