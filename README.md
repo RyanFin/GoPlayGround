@@ -10,6 +10,7 @@
 ## Go General
 - Naming Conventions for Golang Functions: https://www.golangprograms.com/naming-conventions-for-golang-functions.html
 - Anonymous functions: https://www.geeksforgeeks.org/anonymous-function-in-go-language/
+- Array increment types, arr[i]++ vs arr[i++]: https://stackoverflow.com/questions/7595247/array-increment-types-in-c-arrayi-vs-arrayi
 
 ## Linked Lists
 - Go Official Linked List Doc: https://golang.org/pkg/container/list/
