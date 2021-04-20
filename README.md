@@ -25,6 +25,10 @@
   - Reversing a linked list: https://medium.com/outco/reversing-a-linked-list-easy-as-1-2-3-560fbffe2088
   - Insertion into a sorted doubly linked list: https://www.geeksforgeeks.org/insert-value-sorted-way-sorted-doubly-linked-list/
 
+## Tries
+- Data Structures in Golang (Junmin Lee)
+  - Trie Implementation: https://www.youtube.com/watch?v=nL7BHR5vJDc&ab_channel=JunminLee
+
 ## iota
 - https://yourbasic.org/golang/iota/
 
