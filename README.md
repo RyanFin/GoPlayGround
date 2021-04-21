@@ -17,6 +17,7 @@
 - View coverage report in web browser: $ go tool cover -html=coverage.out 
 
 ## Linked Lists
+- LeetCode Breakdown: https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1287/
 - Go Official Linked List Doc: https://golang.org/pkg/container/list/
 - Linked List Tutorial Junmin Lee
   - Part 1: https://www.youtube.com/watch?v=1S0_-VxPLJo&list=PL0q7mDmXPZm7s7weikYLpNZBKk5dCoWm6&index=3&ab_channel=JunminLee
