@@ -17,12 +17,17 @@
 #### Go Routines 
 - Go Routines vs Multithreading vs Multiprocessing:
 
+#### Go WaitGroups
+- Goroutine sync.WaitGroups: https://yourbasic.org/golang/wait-for-goroutines-waitgroup/
+
 ##### GoRoutine Deadlocks
 - Simple deadlock example: https://yourbasic.org/golang/detect-deadlock/
 
 #### Go Channels
+- Channels are objects which allow you to store data in a first-in-first-out(FIFO) queue.
 - Go Channels tutorial: https://tutorialedge.net/golang/go-channels-tutorial/
 - Unbuffered vs Buffered channels in Go: https://www.ardanlabs.com/blog/2014/02/the-nature-of-channels-in-go.html
+
 - **Unbuffered channels have no capacity set**. When attempting to *send* a resource, the unbuffered channel will lock if there is no goroutine waiting to receive the resource from the channel. When attempting to *receive* a resource, the unbuffered channel will lock if there is no goroutine waiting to send a resource to the channel.
 
 - **Buffered channels have a set capacity** which determines how much data can be stored in the channel. In a buffered channel, if the channel is full and the goroutine attempts to *send* data, the goroutine will lock until there is space in the channel. If the buffered channel attempts to *receive* data and the channel is empty, the goroutine will lock as it waits for the buffer to fill with data.
@@ -37,7 +42,8 @@
 
 #### Go Defer Statements
 
-
+#### Go os.Signal
+- Channels that take os.signal objects: s := make(chan os.Signal, 1). This is a buffered channel with a capacity of 1.
 
 #### Anonymous Functions in Go
 
