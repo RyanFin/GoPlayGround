@@ -3,13 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	messages := make(chan string)
+	// make a messages channel
+	var messages = make(chan string)
 
+	// send data to the channel using
 	go func() {
-		// send 'ping' to the channel
-		messages <- "ping"
+		messages <- "this is my data payload"
 	}()
 
-	msg := <-messages
-	fmt.Println(msg)
+	// Get data from the channel
+	data := <-messages
+
+	// output the data
+	fmt.Println(data)
+
 }
