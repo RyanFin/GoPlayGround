@@ -27,26 +27,32 @@
 - Channels are objects which allow you to store data in a first-in-first-out(FIFO) queue.
 - Go Channels tutorial: https://tutorialedge.net/golang/go-channels-tutorial/
 - Unbuffered vs Buffered channels in Go: https://www.ardanlabs.com/blog/2014/02/the-nature-of-channels-in-go.html
+- Channel buffering: https://gobyexample.com/channel-buffering
+  - By default channels are buffered, meaning that they will only accept sends (chan <-) if there is a corresponding receive (<- chan) ready to receive the sent value.
 
 - **Unbuffered channels have no capacity set**. When attempting to *send* a resource, the unbuffered channel will lock if there is no goroutine waiting to receive the resource from the channel. When attempting to *receive* a resource, the unbuffered channel will lock if there is no goroutine waiting to send a resource to the channel.
 
 - **Buffered channels have a set capacity** which determines how much data can be stored in the channel. In a buffered channel, if the channel is full and the goroutine attempts to *send* data, the goroutine will lock until there is space in the channel. If the buffered channel attempts to *receive* data and the channel is empty, the goroutine will lock as it waits for the buffer to fill with data.
 
-#### Go Interfaces
-
 #### Go Mutex
+
+#### Go Interfaces
 
 #### Critical Sections
 
 ####  Race Conditions
 
 #### Go Defer Statements
+- The deferred call's arguments are evaluated immediately, however the deferred code is not executed until the surrounfing function returns.
+- Go Defer statement: https://tour.golang.org/flowcontrol/12
 
 #### Go os.Signal
 - Channels that take os.signal objects: s := make(chan os.Signal, 1). This is a buffered channel with a capacity of 1.
 
 #### Anonymous Functions in Go
 
+#### Atomic Counters
+- Atomic Counters: https://gobyexample.com/atomic-counters
 ## Coverage
 - Generate coverage report: $ go test -coverprofile=coverage.out
 - View coverage report in web browser: $ go tool cover -html=coverage.out 

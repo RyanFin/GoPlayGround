@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// make a messages channel
+	// make a messages unbuffered channel
 	var messages = make(chan string)
 
 	// send data to the channel using
