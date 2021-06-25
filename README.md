@@ -12,6 +12,7 @@
 - Anonymous functions: https://www.geeksforgeeks.org/anonymous-function-in-go-language/
 - Array increment types, arr[i]++ vs arr[i++]: https://stackoverflow.com/questions/7595247/array-increment-types-in-c-arrayi-vs-arrayi
 - Unsigned Integers (uints) are always non-negative (either zero or positive): https://www.cs.utah.edu/~germain/PPS/Topics/unsigned_integer.html#:~:text=Unsigned%20Integers%20(often%20called%20%22uints,will%20always%20be%20non%2Dnegative.
+- For loop  without a condition will loop repeatedly until you break out of the loop or return from the enclosing function: https://gobyexample.com/for
 
 ### Go Specific (Interview Preparation)
 
@@ -20,11 +21,12 @@
   Process: Generated from the executable (go build) when you run it 
   Multiprocessing: Multiple Processes (applications) running at the same time
   Thread: 
-  GoRoutine: Main goroutine as well as concurrent ones you can create
+  GoRoutine: Main goroutine as well as concurrent ones you can create: https://gobyexample.com/goroutines
     - Need to sleep to run goroutines: https://stackoverflow.com/questions/15771232/why-is-time-sleep-required-to-run-certain-goroutines
   - Why goroutines instead of threads?: https://golang.org/doc/faq#goroutines
 
 #### Go WaitGroups
+- To wait for multiple go routines to finish, use a wait group. 
 - Goroutine sync.WaitGroups: https://yourbasic.org/golang/wait-for-goroutines-waitgroup/
 
 ##### GoRoutine Deadlocks
@@ -42,6 +44,7 @@
 - **Buffered channels have a set capacity** which determines how much data can be stored in the channel. In a buffered channel, if the channel is full and the goroutine attempts to *send* data, the goroutine will lock until there is space in the channel. If the buffered channel attempts to *receive* data and the channel is empty, the goroutine will lock as it waits for the buffer to fill with data.
 
 #### Go Mutex
+- Avoid race conditions by syncronising goroutines access to the state (variables) 
 
 #### Go Atomic Operations
 - Atomic counters: https://gobyexample.com/atomic-counters
@@ -49,6 +52,9 @@
 #### Go Worker Pools
 
 #### Go Interfaces
+- Interfaces are named collections of method signatures: https://gobyexample.com/interfaces 
+<!-- - Interfaces work identical to the ones in Java, as they define contracts for what the concrete implementation  must have -->
+- Interfaces in Go enable developers to decide what functions they want as a generic function. That is, it enables multiple  instances of concrete Go Structs to implement them in different ways with the same method name.
 
 #### Critical Sections
 - How to use a mutex to define critical sections of code and fix race conditions: https://www.golangprograms.com/how-to-use-a-mutex-to-define-critical-sections-of-code-and-fix-race-conditions.html
@@ -70,6 +76,9 @@
   - Notify causes package signal to relay incoming signals to c.
 If no signals are provided (second parameter, third param, fourth param...), all incoming signals will be relayed to c.
 Otherwise, just the provided signals will.
+
+#### Continue Statement
+- Forces the next iteration  of the loop to take place: https://www.tutorialspoint.com/go/go_continue_statement.htm
 
 
 #### Anonymous Functions in Go
