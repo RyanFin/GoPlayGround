@@ -55,6 +55,9 @@
 - Interfaces are named collections of method signatures: https://gobyexample.com/interfaces 
 <!-- - Interfaces work identical to the ones in Java, as they define contracts for what the concrete implementation  must have -->
 - Interfaces in Go enable developers to decide what functions they want as a generic function. That is, it enables multiple  instances of concrete Go Structs to implement them in different ways with the same method name.
+- How to use interfaces in Go: https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go
+  - **interface vs interface{} type**
+  - **pointer receivers vs value receivers** when defining functions that belong to a struct
 
 #### Critical Sections
 - How to use a mutex to define critical sections of code and fix race conditions: https://www.golangprograms.com/how-to-use-a-mutex-to-define-critical-sections-of-code-and-fix-race-conditions.html
@@ -80,7 +83,6 @@ Otherwise, just the provided signals will.
 #### Continue Statement
 - Forces the next iteration  of the loop to take place: https://www.tutorialspoint.com/go/go_continue_statement.htm
 
-
 #### Anonymous Functions in Go
 
 #### Atomic Counters
@@ -88,6 +90,9 @@ Otherwise, just the provided signals will.
 
 #### Go Select
 - GoByExample Select: https://gobyexample.com/select
+
+#### Duck Typing
+- Duck typing: https://en.wikipedia.org/wiki/Duck_typing
 
 ## Coverage
 - Generate coverage report: $ go test -coverprofile=coverage.out
