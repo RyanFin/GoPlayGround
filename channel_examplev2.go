@@ -6,7 +6,7 @@ func main() {
 	// make a messages unbuffered channel
 	var messages = make(chan string)
 
-	// send data to the channel using
+	// send data to the channel using anonymous goroutine
 	go func() {
 		messages <- "this is my data payload"
 	}()

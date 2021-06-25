@@ -11,11 +11,18 @@
 - Naming Conventions for Golang Functions: https://www.golangprograms.com/naming-conventions-for-golang-functions.html
 - Anonymous functions: https://www.geeksforgeeks.org/anonymous-function-in-go-language/
 - Array increment types, arr[i]++ vs arr[i++]: https://stackoverflow.com/questions/7595247/array-increment-types-in-c-arrayi-vs-arrayi
+- Unsigned Integers (uints) are always non-negative (either zero or positive): https://www.cs.utah.edu/~germain/PPS/Topics/unsigned_integer.html#:~:text=Unsigned%20Integers%20(often%20called%20%22uints,will%20always%20be%20non%2Dnegative.
 
 ### Go Specific (Interview Preparation)
 
-#### Go Routines 
+#### Go Routines
 - Go Routines vs Multithreading vs Multiprocessing:
+  Process: Generated from the executable (go build) when you run it 
+  Multiprocessing: Multiple Processes (applications) running at the same time
+  Thread: 
+  GoRoutine: Main goroutine as well as concurrent ones you can create
+    - Need to sleep to run goroutines: https://stackoverflow.com/questions/15771232/why-is-time-sleep-required-to-run-certain-goroutines
+  - Why goroutines instead of threads?: https://golang.org/doc/faq#goroutines
 
 #### Go WaitGroups
 - Goroutine sync.WaitGroups: https://yourbasic.org/golang/wait-for-goroutines-waitgroup/
@@ -30,13 +37,14 @@
 - Channel buffering: https://gobyexample.com/channel-buffering
   - By default channels are buffered, meaning that they will only accept sends (chan <-) if there is a corresponding receive (<- chan) ready to receive the sent value.
 
-- **Unbuffered channels have no capacity set**. When attempting to *send* a resource, the unbuffered channel will lock if there is no goroutine waiting to receive the resource from the channel. When attempting to *receive* a resource, the unbuffered channel will lock if there is no goroutine waiting to send a resource to the channel.
+- **Unbuffered channels have no capacity set**. When attempting to *send* a resource, the unbuffered channel will lock (deadlock) if there is no goroutine waiting to receive the resource from the channel. When attempting to *receive* a resource, the unbuffered channel will lock (deadlock) if there is no goroutine waiting to send a resource to the channel.
 
 - **Buffered channels have a set capacity** which determines how much data can be stored in the channel. In a buffered channel, if the channel is full and the goroutine attempts to *send* data, the goroutine will lock until there is space in the channel. If the buffered channel attempts to *receive* data and the channel is empty, the goroutine will lock as it waits for the buffer to fill with data.
 
 #### Go Mutex
 
 #### Go Atomic Operations
+- Atomic counters: https://gobyexample.com/atomic-counters
 
 #### Go Worker Pools
 
@@ -55,8 +63,14 @@
 - Go Defer statement: https://tour.golang.org/flowcontrol/12
 
 #### Go os.Signal
+- Signals in golang: https://gobyexample.com/signals
 - os/signal package: https://golang.org/pkg/os/signal/
 - Channels that take os.signal objects: s := make(chan os.Signal, 1). This is a buffered channel with a capacity of 1.
+- Notify: https://golang.org/pkg/os/signal/#Notify
+  - Notify causes package signal to relay incoming signals to c.
+If no signals are provided (second parameter, third param, fourth param...), all incoming signals will be relayed to c.
+Otherwise, just the provided signals will.
+
 
 #### Anonymous Functions in Go
 
