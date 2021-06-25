@@ -16,4 +16,5 @@ func main() {
 	fmt.Println(<-ch) // 5 is the first out
 	fmt.Println(<-ch) // 10 is the second out
 	fmt.Println(<-ch) // 15 is the third out
+
 }

@@ -12,7 +12,7 @@
 - Anonymous functions: https://www.geeksforgeeks.org/anonymous-function-in-go-language/
 - Array increment types, arr[i]++ vs arr[i++]: https://stackoverflow.com/questions/7595247/array-increment-types-in-c-arrayi-vs-arrayi
 
-### Go Specific (Interview)
+### Go Specific (Interview Preparation)
 
 #### Go Routines 
 - Go Routines vs Multithreading vs Multiprocessing:
@@ -36,23 +36,36 @@
 
 #### Go Mutex
 
+#### Go Atomic Operations
+
+#### Go Worker Pools
+
 #### Go Interfaces
 
 #### Critical Sections
+- How to use a mutex to define critical sections of code and fix race conditions: https://www.golangprograms.com/how-to-use-a-mutex-to-define-critical-sections-of-code-and-fix-race-conditions.html
+  - A mutex is used to create a critical section around code that ensures that only one goroutine is able to execute that code section. This solves race condition issues.
 
-####  Race Conditions
+####  Race Condition
+- Golang: Concurrency is Hard; So What Can We Do About It? | Medium: https://medium.com/dm03514-tech-blog/golang-candidates-and-contexts-a-heuristic-approach-to-race-condition-detection-e2b230e70d08
+- A race condition in Go is where more than one GoRoutine attempt to access the same variable memory address simultaneously; one of which is writing. The application must be synchronised to ensure that this does not happen.
 
 #### Go Defer Statements
 - The deferred call's arguments are evaluated immediately, however the deferred code is not executed until the surrounfing function returns.
 - Go Defer statement: https://tour.golang.org/flowcontrol/12
 
 #### Go os.Signal
+- os/signal package: https://golang.org/pkg/os/signal/
 - Channels that take os.signal objects: s := make(chan os.Signal, 1). This is a buffered channel with a capacity of 1.
 
 #### Anonymous Functions in Go
 
 #### Atomic Counters
 - Atomic Counters: https://gobyexample.com/atomic-counters
+
+#### Go Select
+- GoByExample Select: https://gobyexample.com/select
+
 ## Coverage
 - Generate coverage report: $ go test -coverprofile=coverage.out
 - View coverage report in web browser: $ go tool cover -html=coverage.out 
