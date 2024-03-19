@@ -14,15 +14,15 @@ func TestEvenOrOdd(t *testing.T) {
 		testInput                int
 	}{
 		{"test even - 0", "0 - even", 0},
-		{"test even - 1", "1 - odd", 1},
+		{"test odd - 1", "1 - odd", 1},
 		{"test even - 2", "2 - even", 2},
-		{"test even - 3", "3 - odd", 3},
+		{"test odd - 3", "3 - odd", 3},
 		{"test even - 4", "4 - even", 4},
-		{"test even - 5", "5 - odd", 5},
+		{"test odd - 5", "5 - odd", 5},
 		{"test even - 6", "6 - even", 6},
-		{"test even - 7", "7 - odd", 7},
+		{"test odd - 7", "7 - odd", 7},
 		{"test even - 8", "8 - even", 8},
-		{"test even - 9", "9 - odd", 9},
+		{"test odd - 9", "9 - odd", 9},
 		{"test even - 10", "10 - even", 10},
 	}
 
