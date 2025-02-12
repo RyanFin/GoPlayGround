@@ -33,6 +33,7 @@
 - Simple deadlock example: https://yourbasic.org/golang/detect-deadlock/
 
 #### Go Channels
+- New channels tutorial: https://www.scaler.com/topics/golang/buffered-and-unbuffered-channel-in-golang/
 - Channels are objects which allow you to store data in a first-in-first-out(FIFO) queue.
 - Go Channels tutorial: https://tutorialedge.net/golang/go-channels-tutorial/
 - Unbuffered vs Buffered channels in Go: https://www.ardanlabs.com/blog/2014/02/the-nature-of-channels-in-go.html
