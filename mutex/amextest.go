@@ -40,6 +40,6 @@ func find_min(A []int) int {
 	return result
 }
 
-func main() {
-	Solution(5)
-}
+// func main() {
+// 	Solution(5)
+// }
